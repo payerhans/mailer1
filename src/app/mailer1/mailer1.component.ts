@@ -7,7 +7,7 @@ import { Mailer1Service, IMessage } from './mailer1.service';
   styleUrls: ['./mailer1.component.css']
 })
 export class Mailer1Component  {
-  title = 'Angular PHP Email Example!';
+  title = 'Original PHP Email Example!';
   message: IMessage = {};
 
   constructor(private mailer1Service: Mailer1Service) {

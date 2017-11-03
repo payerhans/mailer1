@@ -20,7 +20,7 @@ if(empty($errors))
 							<p><strong>Email:</strong> $from_email</p>";
 	$content = "<p>$message</p>";
 
-	$website = 'Angular Php Email Example';
+	$website = 'Desired php mail example';
 	$email_subject = "$website: Neue Nachricht von $from_name erhalten";
 
 	$email_body = '<html><body>';

@@ -1,6 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatTabsModule} from '@angular/material';
+import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  MatSortModule,
+  MatPaginatorModule
+} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 
@@ -9,6 +39,7 @@ import { Mailer1Component } from './mailer1/mailer1.component';
 import { DesireComponent } from './desire/desire.component';
 import { Mailer1Service } from './mailer1/mailer1.service';
 import { HttpModule } from '@angular/http';
+import { DesireService } from './desire/desire.service';
 
 @NgModule({
   declarations: [
@@ -18,12 +49,43 @@ import { HttpModule } from '@angular/http';
   ],
   imports: [
     BrowserModule,
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
     MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatSortModule,
+    MatPaginatorModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
   ],
-  providers: [Mailer1Service],
+  providers: [
+    Mailer1Service,
+    DesireService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

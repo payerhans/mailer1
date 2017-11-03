@@ -1,3 +1,25 @@
-<p>
-  desire works!
-</p>
+{{title}}
+
+<!--<form id="contact-form" method="POST" action="assets/email.php">-->
+<form (submit)="sendEmail(message)">
+  <div class="example-container">
+      <mat-form-field>
+         <input matInput placeholder="Your Name" name="name" [(ngModel)]="message.name">
+      </mat-form-field>
+  
+ 
+    <mat-form-field>
+      <input matInput placeholder="Your Email" name="email" [(ngModel)]="message.email">
+    </mat-form-field>
+    
+    <mat-form-field>
+      <textarea matInput placeholder="Textarea" name="message" [(ngModel)]="message.message"></textarea>
+    </mat-form-field>
+  
+   <!--  <label for="message">Message</label>
+    <textarea rows="6" name="message" [(ngModel)]="message.message"></textarea> -->
+  
+  <button type="submit">Send Email</button>
+    </div>
+</form>
+

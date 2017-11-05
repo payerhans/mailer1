@@ -40,12 +40,14 @@ import { DesireComponent } from './desire/desire.component';
 import { Mailer1Service } from './mailer1/mailer1.service';
 import { HttpModule } from '@angular/http';
 import { DesireService } from './desire/desire.service';
+import { AnotherComponent } from './another/another.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Mailer1Component,
-    DesireComponent
+    DesireComponent,
+    AnotherComponent
   ],
   imports: [
     BrowserModule,
